@@ -1,0 +1,31 @@
+{
+  "name": "WP-Start",
+  "version": "1.0.0",
+  "description": "A quick way to get started with a custom wordpress theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tabetha Moe <icreatetheinternet@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-google": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-eslint": "*",
+    "gulp-ftp": "*",
+    "gulp-imagemin": "*",
+    "gulp-pug": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "babel-core": "*"
+  }
+}

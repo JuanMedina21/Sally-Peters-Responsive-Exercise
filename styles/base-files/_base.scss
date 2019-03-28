@@ -1,0 +1,16 @@
+@import "base-files/_themeHead.scss";
+@import "base-files/config";
+@import "base-files/mixins";
+@import "base-files/reset";
+@import "base-files/bootstrap";
+
+//UNIVERSAL STYLES
+
+//COLOR PALETTE
+$black: #000000;
+$white: #ffffff;
+$hover: #56A0D3;
+
+//TYPOGRAPHY
+$serif: serif;
+$sansSerif: sans-serif;
