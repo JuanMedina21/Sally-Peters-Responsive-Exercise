@@ -1,9 +1,56 @@
 doctype html
 html
    include includes/header
+   include includes/navbar
 
    body(ng-app="angularApp" ng-controller="mainCtrl")
-      div.container
-         h1 hello
+   
+      section.hero
+         div.container
+            div.circle
+               P WEB FONTS INCLUDED
+
+            div.square
+               div.content
+                  h3 bonjour!
+                  p THE PERFECT FONT FOR HANDWRITTEN SNIPPETS ON YOUR BLOG OR WEBSITE. 
+
+            div.hero-img
+               img(src="./assets/images/hero-img.jpg", alt="Hero")
+
+
+      section.information
+         div.container
+
+            div.info
+
+               div.info-cont
+                  div.info-title
+                     p about
+                  div.info-text
+                     p ALL ABOUT ME
+               
+               div.info-cont
+                  div.info-title
+                     p blog
+                  div.info-text
+                     p THE LATEST POSTS
+                  
+               div.info-cont
+                  div.info-title
+                     p contact
+                  div.info-text
+                     p GET IN TOUCH
+
+
+
+
+
+
+
+
+
+
+
 
       include includes/footer

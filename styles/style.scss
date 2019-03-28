@@ -1,5 +1,6 @@
 @import "base-files/base";
 
+
 //SITE STYLES
 
 html {
@@ -7,6 +8,212 @@ html {
 
   body {
     min-height: 100vh;
+
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: $font-one;
+    color: $font-color;
   }
 
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: $font-two;
+    color: #B76E79;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    font-family: $font-one;
+    color: $font-color;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  
+    
+    // NAVIGATION BAR
+    
+     .closed-nav {
+       display: flex;
+       justify-content: space-between;
+       background-color: $main-background;
+       position: relative;
+     }
+
+     .icons {
+        padding-left: 10px;
+
+      ul {
+        padding-left: 0;
+      }
+
+      .fab.fa-facebook-square {
+        color: #3C5A99;
+        font-size: 25px;
+      }
+
+      .fab.fa-twitter-square {
+        color: #1DA1F2;
+        font-size: 25px;
+      }
+
+      .fab.fa-pinterest-square {
+        color: #BD081C;
+        font-size: 25px;
+      }
+
+     }
+
+     .title {
+      background-color: $main-background;
+        h1 {
+          padding-top: 15px;
+        }
+
+        h2 {
+          padding-bottom: 20px;
+        }
+     }
+
+     .est {
+       position: absolute;
+       left: 42.7%;
+       top: 14%;
+       font-size: 12px;
+     }
+     
+     .hamburger-icon {
+       margin-top: 15px;
+       padding-right: 10px;
+     }
+
+     .line {
+       height: 4px;
+       width: 50px;
+       background-color: #B76E79;
+       margin-bottom: 4px;
+     }
+  
+     .bottom-triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 21px 53px 0 53px;
+      border-color: $main-background transparent transparent transparent;  
+      margin: 0 auto;
+     }
+    
+  }
+
+  // HERO SECTION
+
+  .hero {
+    margin-bottom: 25px;
+  }
+
+  .circle {
+    width: 8vh;
+    height: 8vh;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    background-color: $main-background;
+    position: absolute;
+    z-index: 3;
+    right: 52px;
+
+    p {
+      color: white;
+      font-size: 12px;
+      padding-top: 32%;
+      font-weight: bold;
+    }
+  }
+
+  .square {
+    width: 25vh;
+    height: 15vh;
+    border: 1px solid transparent;
+    background-color: rgb(68, 65, 65);
+    position: relative;
+    margin: 0 auto;
+    bottom: -35px;
+
+    .content {
+      position: absolute;
+      bottom: 8px;
+    }
+
+    h3 {
+      color: #B76E79;
+      font-size: 38px;
+      font-family: $font-two;
+      text-align: center;
+      padding-bottom: 6px;
+    }
+
+    p {
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+  // INFORMATION SECTION
+
+  .information {
+    background-color: $main-background;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+
+    .info-title {
+      p {
+        font-family: $font-two;
+        color: $font-color;
+        font-size: 40px;
+        border-bottom: 2px solid white;
+        padding-bottom: 45px;
+      }
+
+    .info-text {
+      p {
+        font-family: $font-one;
+        color: $font-color;
+        font-size: 14px;
+        padding-top: 5px;
+      }
+    }
+
+  }
+  .info-cont {
+    width: 85%;
+    height: 15vh;
+    border: 2px solid white;
+    margin: 0 auto;
+    padding-top: 20px;
+    }
+
+
+  }
+
+  
+  
+
+
+  
+
 }
+
