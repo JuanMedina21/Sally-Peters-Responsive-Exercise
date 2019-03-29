@@ -27,5 +27,8 @@
     "gulp-util": "*",
     "gulp-watch": "*",
     "babel-core": "*"
+  },
+  "dependencies": {
+    "bootstrap": "^3.4.1"
   }
 }

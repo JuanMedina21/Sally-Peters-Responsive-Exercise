@@ -6,7 +6,9 @@ html
    body(ng-app="angularApp" ng-controller="mainCtrl")
    
       section.hero
+
          div.container
+
             div.circle
                P WEB FONTS INCLUDED
 
@@ -20,37 +22,70 @@ html
 
 
       section.information
+
          div.container
 
             div.info
-
                div.info-cont
                   div.info-title
-                     p about
+                     a(href="#")
+                        p about
                   div.info-text
-                     p ALL ABOUT ME
+                     a(href="#")
+                        p ALL ABOUT ME
                
                div.info-cont
                   div.info-title
-                     p blog
+                     a(href="#")
+                        p blog
                   div.info-text
-                     p THE LATEST POSTS
+                     a(href="#")
+                        p THE LATEST POSTS
                   
                div.info-cont
                   div.info-title
-                     p contact
+                     a(href="#")
+                        p contact
                   div.info-text
-                     p GET IN TOUCH
+                     a(href="#")
+                        p GET IN TOUCH
+            div.triangle-up
+      
+      section.products
+
+         div.container
+
+            h2 shop my faves
+
+            div.shop-section
+               p THE LOVE LIST
+               div.shop-items
+                  div.item
+                     img.img-responsive(src="./assets/images/bag.jpg", alt="")
+
+                  div.item
+                     img.img-responsive(src="./assets/images/jeans.jpg", alt="")
+
+                  div.item
+                     img.img-responsive(src="./assets/images/shoes.jpg", alt="")
 
 
+      div.circle-logo
+         h1 SALLY PETERS
+            h2 Online
 
+      section.follow
+         div.container
 
+            div.third-image
+               img(src="./assets/images/third-img.jpg", alt="")
 
+            div.follow-me
+               h2 follow me
 
-
-
-
-
+      div.instagram
+         a(href="#")
+            p INSTAGRAM @SALLY
 
 
       include includes/footer

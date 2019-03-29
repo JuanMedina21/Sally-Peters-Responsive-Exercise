@@ -23,11 +23,11 @@ div(ng-click="showNav = !showNav")
     div.bottom-triangle(ng-if="!showNav")
 
     div.open-nav(ng-if="showNav")
-        div.nav-open.nav-show
-            button.nav-close.float-right.d-flex.justify-content-end x 
+        div.nav-open
+            a(href="#").nav-close x 
 
         nav.nav-menu
-            ul.menu-listd-flex.justify-content-start
+            ul.menu-list
                 li HOME
                 li ABOUT
                 li BLOG
