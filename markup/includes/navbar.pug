@@ -1,39 +1,38 @@
 navbar
 
-div(ng-click="showNav = !showNav")
+    div(ng-click="showNav = !showNav")
+        div.closed-nav(ng-if="!showNav")
+            div.icons
+                ul
+                    li.fab.fa-facebook-square
+                    li.fab.fa-twitter-square
+                    li.fab.fa-pinterest-square
 
-    div.closed-nav(ng-if="!showNav")
-        div.icons
-            ul
-                li.fab.fa-facebook-square
-                li.fab.fa-twitter-square
-                li.fab.fa-pinterest-square
+            div.hamburger-icon
+                div.line &nbsp;
+                div.line &nbsp;
+                div.line &nbsp;
 
-        div.hamburger-icon
-            div.line &nbsp;
-            div.line &nbsp;
-            div.line &nbsp;
+        div.title(ng-if="!showNav")
+            div.hero-title
+                h1 SALLY PETERS
+                h2 Online
+                p.established-date EST 2019
 
-    div.title(ng-if="!showNav")
-        div.hero-title
-            h1 SALLY PETERS
-            h2 Online
-            p.est EST 2019
+        div.bottom-triangle(ng-if="!showNav")
 
-    div.bottom-triangle(ng-if="!showNav")
+        div.open-nav(ng-if="showNav")
+            div.nav-open
+                a(href="#").nav-close x 
 
-    div.open-nav(ng-if="showNav")
-        div.nav-open
-            a(href="#").nav-close x 
-
-        nav.nav-menu
-            ul.menu-list
-                li HOME
-                li ABOUT
-                li BLOG
-                li CATEGORIES
-                li CONTACT
-                li SEARCH
+            nav.nav-menu
+                ul.menu-list
+                    li HOME
+                    li ABOUT
+                    li BLOG
+                    li CATEGORIES
+                    li CONTACT
+                    li SEARCH
 
   
             

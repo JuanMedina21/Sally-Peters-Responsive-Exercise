@@ -10,114 +10,131 @@ html {
     min-height: 100vh;
 
 
-  h1 {
-    font-size: 25px;
-    text-align: center;
-    font-family: $font-one;
-    color: $font-color;
-  }
-
-  h2 {
-    font-size: 30px;
-    text-align: center;
-    font-family: $font-two;
-    color: #B76E79;
-  }
-
-  p, 
-  li {
-    font-size: 14px;
-    text-align: center;
-    font-family: $font-one;
-    color: $font-color;
-  }
-
-
-  ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 15px;
-
-    li {
-      padding-bottom: 10px;
+    h1 {
+      font-size: 25px;
+      text-align: center;
+      font-family: $font-one;
+      color: $font-color;
     }
-  }
 
-  img {
-    width: 100%;
-  }
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      font-family: $font-two;
+      color: #B76E79;
+    }
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-  }
+    p, 
+    li {
+      font-size: 14px;
+      text-align: center;
+      font-family: $font-one;
+      color: $font-color;
+    }
 
-  
+
+    ul {
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 15px;
+
+      li {
+        padding-bottom: 10px;
+      }
+
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     
     // NAVIGATION BAR
+
     
-     .closed-nav {
+    .closed-nav {
        display: flex;
        justify-content: space-between;
        background-color: $main-background;
        position: relative;
-     }
 
-     .icons {
+       .icons {
         padding-left: 10px;
-
-      ul {
-        padding-left: 0;
+  
+        ul {
+          padding-left: 0;
+        }
+    
+        .fab.fa-facebook-square {
+          color: #3C5A99;
+          font-size: 25px;
+        }
+    
+        .fab.fa-twitter-square {
+          color: #1DA1F2;
+          font-size: 25px;
+        }
+    
+        .fab.fa-pinterest-square {
+          color: #BD081C;
+          font-size: 25px;
+        }
+  
       }
 
-      .fab.fa-facebook-square {
-        color: #3C5A99;
-        font-size: 25px;
+      .hamburger-icon {
+        margin-top: 15px;
+        padding-right: 10px;
+      }
+ 
+      .line {
+        height: 4px;
+        width: 50px;
+        background-color: #B76E79;
+        margin-bottom: 4px;
+      }
+        
+    }
+
+    .hero-title {
+      background-color: $main-background !important;
+
+      h1 {
+        padding-top: 15px;
       }
 
-      .fab.fa-twitter-square {
-        color: #1DA1F2;
-        font-size: 25px;
+      h2 {
+        padding-bottom: 20px;
+        transform: rotate(-10deg);
       }
 
-      .fab.fa-pinterest-square {
-        color: #BD081C;
-        font-size: 25px;
+      .established-date {
+        position: absolute;
+        left: 42.7%;
+        top: 14%;
+        font-size: 12px;
       }
 
-     }
+    }
 
-     .title {
+    .open-nav {
       background-color: $main-background;
-        h1 {
-          padding-top: 15px;
-        }
+  
+      a {
+        font-size: 40px;
+        color: $font-color;
+        font-family: $font-one;
+        position: absolute;
+        right: 15px;
+      }
 
-        h2 {
-          padding-bottom: 20px;
-          transform: rotate(-10deg);
-        }
-     }
-
-     .est {
-       position: absolute;
-       left: 42.7%;
-       top: 14%;
-       font-size: 12px;
-     }
-     
-     .hamburger-icon {
-       margin-top: 15px;
-       padding-right: 10px;
-     }
-
-     .line {
-       height: 4px;
-       width: 50px;
-       background-color: #B76E79;
-       margin-bottom: 4px;
-     }
+    }
   
      .bottom-triangle {
       width: 0;
@@ -128,269 +145,186 @@ html {
       margin: 0 auto;
      }
     
-  }
-
-  .open-nav {
-    background-color: $main-background;
-
-    a {
-      font-size: 40px;
-      color: $font-color;
-      font-family: $font-one;
-      float: right;
-      position: absolute;
-      right: 15px;
-    }
-
-      
-  }
 
   // HERO SECTION
 
-  .hero {
-    margin-bottom: 25px;
-  }
-
-  .circle {
-    width: 8vh;
-    height: 8vh;
-    border: solid 1px transparent;
-    border-radius: 50%;
-    background-color: $main-background;
-    position: absolute;
-    z-index: 3;
-    right: 52px;
-
-    p {
-      color: white;
-      font-size: 12px;
-      padding-top: 32%;
-      font-weight: bold;
+    .hero {
+      margin-bottom: 25px;
     }
-  }
 
-  .square {
-    width: 25vh;
-    height: 15vh;
-    border: 1px solid transparent;
-    background-color: $secondary-background;
-    position: relative;
-    margin: 0 auto;
-    bottom: -35px;
-
-    .content {
+    .circle {
+      width: 8vh;
+      height: 8vh;
+      border: solid 1px transparent;
+      border-radius: 50%;
+      background-color: $main-background;
       position: absolute;
-      bottom: 8px;
+      z-index: 3;
+      right: 52px;
+
+      p {
+        color: white;
+        font-size: 12px;
+        padding-top: 32%;
+        font-weight: bold;
+      }
+
     }
 
-    h3 {
-      color: #B76E79;
-      font-size: 38px;
-      font-family: $font-two;
-      text-align: center;
-      padding-bottom: 6px;
-    }
+    .square {
+      width: 25vh;
+      height: 15vh;
+      border: 1px solid transparent;
+      background-color: $secondary-background;
+      position: relative;
+      margin: 0 auto;
+      bottom: -35px;
 
-    p {
-      color: white;
-      font-size: 12px;
+      .content {
+        position: absolute;
+        bottom: 8px;
+      }
+
+      h3 {
+        color: #B76E79;
+        font-size: 38px;
+        font-family: $font-two;
+        text-align: center;
+        padding-bottom: 6px;
+      }
+
+      p {
+        color: white;
+        font-size: 12px;
+      }
+
     }
-  }
 
   // INFORMATION SECTION
 
-  .information {
-    background-color: $main-background;
+    .information {
+      background-color: $main-background;
 
-    .container {
-      padding: 40px 0 40px;
-      position: relative;
-    }
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-
-    .info-cont {
-      width: 85%;
-      height: 15vh;
-      border: 2px solid white;
-      margin: 0 auto;
-      padding-top: 34px;
-      margin-bottom: 15px;
-    }
-  
-    .info-title {
-
-      p {
-        font-family: $font-two;
-        color: $font-color;
-        font-size: 40px;
-        border-bottom: 2px solid white;
-        padding-bottom: 40px;
+      .container {
+        padding: 40px 0 40px;
+        position: relative;
       }
 
-    .info-text {
+      .info {
+        display: flex;
+        flex-direction: column;
+  
+        .info-cont {
+          width: 85%;
+          height: 15vh;
+          border: 2px solid white;
+          margin: 0 auto;
+          padding-top: 34px;
+          margin-bottom: 15px;
+        }
+  
+        .info-title {
+  
+          p {
+            font-family: $font-two;
+            color: $font-color;
+            font-size: 40px;
+            border-bottom: 2px solid white;
+            padding-bottom: 40px;
+          }
+  
+          .info-text {
+    
+            p {
+              font-family: $font-one;
+              color: $font-color;
+              font-size: 10px !important;
+              padding-top: 5px 
+            }
 
-      p {
-        font-family: $font-one;
-        color: $font-color;
-        font-size: 10px !important;
-        padding-top: 5px 
+          }
+  
+        }
+  
       }
+
     }
 
-  }
+    .triangle-up {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 53px 21px 53px;
+        border-color: transparent transparent $secondary-background transparent;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 0;
+        right: 33.5%;
+    }
 
-  }
 
-  .triangle-up {
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 53px 21px 53px;
-      border-color: transparent transparent $secondary-background transparent;
-      margin: 0 auto;
-      position: absolute;
-      bottom: 0;
-      right: 33.5%;
-  }
 
-  
   // PRODUCTS SECTION
 
-.products {
-  background-color: $secondary-background;
-  width: 100%;
-  height: 100%;
-  margin-top: -1px;
-  padding-bottom: 50px;
+    .products {
+      background-color: $secondary-background;
+      width: 100%;
+      height: 100%;
+      margin-top: -1px;
+      padding-bottom: 50px;
 
-  p {
-    color: white;
-    padding-top: 30px;
-  }
+      p {
+        color: white;
+        padding-top: 30px;
+      }
 
 
-  .container {
-    h2 {
-      transform: rotate(-10deg);
-      text-align: left;
-      padding-top: 15px;
+      .container {
+        h2 {
+          transform: rotate(-10deg);
+          text-align: left;
+          padding-top: 15px;
+        }
+
+      }
+
+      .shop-items {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    
+        .item {
+          width: 75%;
+          margin: 0 auto;
+          padding-bottom: 10px;
+    
+          img {
+            height: 300px;
+          }
+
+        }
+    
+      }
+
+
     }
-  }
-}
 
-.shop-items {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
+    
 
-  .item {
-    width: 75%;
-    margin: 0 auto;
-    padding-bottom: 10px;
+    // CIRCLED LOGO
 
-    img {
-      height: 300px;
-    }
-  }
-  
-}
-
-// CIRCLED LOGO
-
-.circle-logo {
-  width: 12vh;
-  height: 12vh;
-  border: solid 1px $secondary-background;
-  border-radius: 50%;
-  background-color: white;
-  margin: 0 auto;
-  margin-top: -30px;
-  position: absolute;
-  right: 31%;
-  z-index: 7;
-
-  h1 {
-    font-size: 14px;
-    padding-top: 45px;
-  }
-
-  h2 {
-    font-size: 18px;
-    transform: rotate(-10deg);
-  }
-}
-
-}
-
-// FOLLOW ME SECTION
-
-.follow {
-  padding-top: 45px;
-  position: relative;
-}
-
-.follow-me {
-  background-color: $secondary-background;
-  border: 2px solid white;
-  position: absolute;
-  bottom: -25px;
-  right: 30%;
-  padding: 10px;
-}
-
-.instagram {
-  margin-top: 35px;
-  padding-bottom: 20px;
-
-  p {
-    font-weight: bold;
-    font-size: 12px;
-  }
-}
-
-//FOOTER
-
-footer {
-  .colors {
-    background-color: $main-background;
-    width: 100%;
-    height: 100px;
-  }
-
-  .colors:before {
-    content: '';
-    position: absolute;
-    width: 20%;
-    left: 12.8%;
-    height: 100px;
-    background: $third-background;
-  }
-
-  .colors:after {
-    content: '';
-    position: absolute;
-    width: 20%;
-    right: 12.8%;
-    height: 100px;
-    background: $third-background;
-  }
-
-  .footer-content {
-    background-color: $secondary-background;
-
-    .circle-logo-2 {
+    .circle-logo {
       width: 12vh;
       height: 12vh;
-      border: solid 1px $main-background;
+      border: solid 1px $secondary-background;
       border-radius: 50%;
-      background-color: $main-background;
+      background-color: white;
       margin: 0 auto;
-      margin-top: 15px;
-      
+      margin-top: -30px;
+      position: absolute;
+      right: 31%;
+      z-index: 7;
+
       h1 {
         font-size: 14px;
         padding-top: 45px;
@@ -400,61 +334,160 @@ footer {
         font-size: 18px;
         transform: rotate(-10deg);
       }
-      
+
     }
 
-    .footer-links {
-      display: flex;
-      padding: 15px 0;
-      justify-content: center;
 
-      li {
+
+    // FOLLOW ME SECTION
+
+    .follow {
+      padding-top: 45px;
+      position: relative;
+
+
+      .follow-me {
+        background-color: $secondary-background;
+        border: 2px solid white;
+        position: absolute;
+        bottom: -25px;
+        right: 30%;
+        padding: 10px;
+      }
+
+    }
+
+    .instagram {
+      margin-top: 35px;
+      padding-bottom: 20px;
+      
+      p {
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+      
+  } // END OF BODY
+
+
+
+  //FOOTER
+
+  footer {
+
+    .colors {
+      background-color: $main-background;
+      width: 100%;
+      height: 100px;
+    }
+
+    .colors:before {
+      content: '';
+      position: absolute;
+      width: 20%;
+      left: 12.8%;
+      height: 100px;
+      background: $third-background;
+    }
+
+    .colors:after {
+      content: '';
+      position: absolute;
+      width: 20%;
+      right: 12.8%;
+      height: 100px;
+      background: $third-background;
+    }
+
+    .footer-content {
+      background-color: $secondary-background;
+
+      .circle-logo-2 {
+        width: 12vh;
+        height: 12vh;
+        border: solid 1px $main-background;
+        border-radius: 50%;
+        background-color: $main-background;
+        margin: 0 auto;
+        margin-top: 15px;
+        
+        h1 {
+          font-size: 14px;
+          padding-top: 45px;
+        }
+
+        h2 {
+          font-size: 18px;
+          transform: rotate(-10deg);
+        }
+        
+      }
+
+      .footer-links {
+        display: flex;
+        padding: 15px 0;
+        justify-content: center;
+
+        li {
+          color: white;
+          font-size: 11px;
+        }
+
+      }
+
+    }
+
+    .footer-form {
+      text-align: center;
+
+      .form-label {
         color: white;
         font-size: 11px;
+        font-family: $font-one;
+        padding-top: 10px;
+        
+        input {
+          border-radius: 3px;
+        }
       }
-    }
 
-  }
-
-  .footer-form {
-    text-align: center;
-
-    .form-label {
-      color: white;
-      font-size: 11px;
-      font-family: $font-one;
-      padding-top: 10px;
-      
-      input {
-        border-radius: 3px;
+      .button {
+        padding: 10px;
       }
+
+      button {
+        background-color: $main-background;
+        border-radius: 2px;
+        border: none;
+        color: $font-two;
+        font-size: 11px;
+        font-family: $font-one;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 3px 10px;
+      }
+
     }
 
-    .button {
-      padding: 10px;
-    }
-
-    button {
+    .bottom-section {
       background-color: $main-background;
-      border-radius: 2px;
-      border: none;
-      color: $font-two;
-      font-size: 11px;
-      font-family: $font-one;
-      font-weight: bold;
-      letter-spacing: 2px;
-      padding: 3px 10px;
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+        padding: 15px;
+      }
+
     }
+
   }
 
-  .bottom-section {
-    background-color: $main-background;
 
-    p {
-      font-size: 10px;
-      font-weight: bold;
-      padding: 15px;
-    }
-  }
 }
+
+  
+
+ 
+
+
 
